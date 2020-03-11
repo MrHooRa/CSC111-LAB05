@@ -3,7 +3,7 @@
  * U ID: 439100011
  * Lab 5 parts(1, 2, 3, 4 )
  * 
- * PLEASE DO NOT REMOVE ME NAME!
+ * PLEASE DO NOT REMOVE MY NAME :D
  */
 
 import java.util.Scanner;
