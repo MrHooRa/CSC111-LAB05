@@ -1,2 +1,4 @@
 # CSC111-LAB05
-الواجب لـ الاب 5
+Lab 5
+
+* Just remove comment sign to run the part you want!
