@@ -1,3 +1,13 @@
+/*
+ * By: Salman Alessa
+ * 
+ * Lab 5 parts(1, 2, 3, 4 )
+ * 
+ * 
+ * Github LINK ( https://github.com/MrHooRa/CSC111-LAB05 ).
+ * Please if there is a bug or want to contact me, you can contact me at (salman.m.alessa@gmail.com)
+ */
+
 import java.util.Scanner;
 
 public class GameStore1 {
