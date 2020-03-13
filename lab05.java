@@ -21,7 +21,7 @@ public class gamingCenter {
 		//	GameStore1(); // Lab 5 Part 1
 		//	GameStore2(); // Lab 5 Part 2
 		//	GameStore3(0); // Lab 5 Part 3
-			GameStore4(1); // Lab 5 Part 4
+		//	GameStore4(1); // Lab 5 Part 4
 
 	}
 
