@@ -15,19 +15,19 @@ import java.util.Scanner;
 public class GameStore3 {
 
 	public static void main(String[] args) {
-			
+
 		// Call class Game Store 3, make the inventory value = 0. (Because it is empty).
 		GameStore(0);
-	
+
 	}
-		
+
 	public static void GameStore(int inventory) {
 		// Variables
 		String option;
 		int id = 0;
 		double discount = 0, price = 0;
 		Scanner input = new Scanner(System.in);
-			
+
 		//---------------------------------------\\
 		// Print welcome message and ask the user to enter the option.
 		System.out.print("\n*************************************************************************\n" +
@@ -40,41 +40,45 @@ public class GameStore3 {
 				"*\t\t\t\t\t\t\t\t\t*\n*************************************************************************\n" +
 				"\nEnter your options :> ");
 		option = input.next();
-					
+
 		// When the user choose option ADD.
 		if(option.equals("add")) {
-				
+
 			// While the user enter number more than -1, do ....
 			while(id >= 0) {
-					
+
 				// Ask the user to enter game id.
 				System.out.print("Please, enter game id (-1 to end):");
 				id = input.nextInt();
-					
+				
+				// if user enter -1, exit from this while!
+				if(id == -1) {
+					break;
+				}
 				// Add +1 to know how many games do the user entered.
 				inventory++;
-					
+
 			}
-				
-		// After user enter -1, call class GameStore again with inventory value = 1 - inventory.
-		GameStore(--inventory);
-						
+
+		// After user enter -1, call class GameStore again with inventory value = inventory.
+		GameStore(inventory);
+
 		//When the user choose option SELL.
 		}else if (option.equals("sell")) {
-				
+
 			// When inventory is NOT empty.
 			if(inventory > 0) {
-					
+
 				// New variable i = inventory.
 				int i = inventory;
-					
+
 				// While inventory are not empty.
 				while(inventory > 0) {
-						
+
 					// Ask the user to enter game id.
 					System.out.print("Please, enter game id (-1 to end): ");
 					id = input.nextInt();
-						
+
 					// Ask the user to enter price of the game.
 					System.out.print("Please, enter the price of next game: ");
 					price = price + input.nextDouble();
