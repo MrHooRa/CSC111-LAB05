@@ -21,7 +21,7 @@ public class gamingCenter {
 		//	GameStore1(); // Lab 5 Part 1
 		//	GameStore2(); // Lab 5 Part 2
 		//	GameStore3(0); // Lab 5 Part 3
-		//	GameStore4(1); // Lab 5 Part 4
+			GameStore4(1); // Lab 5 Part 4
 
 	}
 
@@ -129,24 +129,28 @@ public class gamingCenter {
 				"*\t\t\t\t\t\t\t\t\t*\n*************************************************************************\n" +
 				"\nEnter your options :> ");
 		option = input.next();
-							
+
 		// When the user choose option ADD.
 		if(option.equals("add")) {
-						
+
 			// While the user enter number more than -1, do ....
 			while(id >= 0) {
-							
+
 				// Ask the user to enter game id.
 				System.out.print("Please, enter game id (-1 to end):");
 				id = input.nextInt();
-							
+				
+				// if user enter -1, exit from this while!
+				if(id == -1) {
+					break;
+				}
 				// Add +1 to know how many games do the user entered.
 				inventory++;
-							
+
 			}
-						
-		// After user enter -1, call class GameStore again with inventory value = 1 - inventory.
-		GameStore3(--inventory);
+
+		// After user enter -1, call class GameStore again with inventory value = inventory.
+		GameStore3(inventory);
 								
 		//When the user choose option SELL.
 		}else if (option.equals("sell")) {
